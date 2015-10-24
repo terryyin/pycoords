@@ -7,7 +7,15 @@ from pycoords_lib.ui import App
 
 VERSION = "0.1.1"
 
+
+def usage():
+    print("Usage:")
+    print("    pycoords <csv file path name>")
+
+
 def main(argv):
+    if len(argv) != 2:
+        return usage()
     with open(argv[1]) as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         coords = [[float(r[0]), float(r[1])] for r in reader]
