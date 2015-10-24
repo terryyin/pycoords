@@ -10,7 +10,7 @@ pep8:
 	pep8 --exclude=mock.py pycoords_lib tests
 
 pylint:
-	pylint --rcfile pylintrc pycoords_lib tests
+	pylint --rcfile pylintrc pycoords_lib
 
 deps:
 	pip install -r dev_requirements.txt

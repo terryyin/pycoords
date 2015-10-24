@@ -42,6 +42,7 @@ It works with Java, C/C++, JavaScript, Python, Objective C. Metrics includes cyc
                      'Programming Language :: Python :: 3.3'],
           packages = ['pycoords_lib'],
           #py_modules = ['pycoords'],
+          #install_requires=['pyqt4'],
           author = 'Terry Yin',
           author_email = 'terry@odd-e.com',
           scripts = ['pycoords.bat', 'pycoords']
