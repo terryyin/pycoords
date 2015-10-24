@@ -26,8 +26,3 @@ def main(argv):
     app.mainloop()
     for row in coords.coords:
         print(", ".join(str(i) for i in row))
-
-
-if __name__ == "__main__":
-    import sys
-    main(sys.argv)
