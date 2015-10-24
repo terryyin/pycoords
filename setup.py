@@ -4,7 +4,7 @@ To install lizard:
 [sudo] python setup.py install
 '''
 
-import pycoords_lib
+from pycoords_lib import VERSION
 from setuptools import setup, find_packages
 import os
 
@@ -15,7 +15,7 @@ def install(appname):
 
     setup(
           name = appname,
-          version = pycoords.VERSION,
+          version = VERSION,
           description = ''' A code analyzer without caring the C/C++ header files.
 It works with Java, C/C++, JavaScript, Python, Objective C. Metrics includes cyclomatic complexity number etc.''',
           long_description =  readme,

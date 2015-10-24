@@ -5,6 +5,7 @@ import csv
 from pycoords_lib.coords_view import CoordsView, ScaledCoords
 from pycoords_lib.ui import App
 
+VERSION = "0.1.1"
 
 def main(argv):
     with open(argv[1]) as csvfile:
